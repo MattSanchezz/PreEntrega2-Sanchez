@@ -11,10 +11,12 @@
 }
 .imagepy{
     position: absolute;
-    width: 150px;
-    height: 128.29px;
-    left: 1233px;
-    top: 26px;
+    width: 125px;
+    height: 100px;
+    left: 1275px;
+    top: 75px;
+    transform: translate(-50%, -50%);
+    animation: latido 1.4s linear infinite;
 }
 .logopy{
     position: absolute;
@@ -467,4 +469,21 @@ background: #DD647A;
     left: 600px;
     top: 545px;
     background: #64dd7f
+}
+@keyframes latido {
+    0%{
+        transform: translate(-50%, -50%)  scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%)  scale(1.4);
+    }
+    50% {
+        transform: translate(-50%, -50%)  scale(1.2);
+    }
+    75% {
+        transform: translate(-50%, -50%)  scale(1.4);
+    }
+    100%{
+        transform: translate(-50%, -50%)  scale(1);
+    }
 }
