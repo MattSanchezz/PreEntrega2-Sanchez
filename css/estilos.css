@@ -1,32 +1,161 @@
-.carta{
-    background-color: #9efd9e;
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+        360deg,
+        rgba(64, 150, 144, 0.575) 0%,
+        #9efd9e
+    );
+    background-attachment: fixed;
     width: 1440px;
     height: 1505px;
 }
-.carta__cabeza{
-    background-color: #f6f6f6;
-    width: 1440px;
-    height: 180px;
-
-}
-.imagepy{
-    position: absolute;
-    width: 125px;
-    height: 100px;
-    left: 1275px;
-    top: 100px;
-    transform: translate(-50%, -50%);
-    animation: latido 1.4s linear infinite;
-}
-.logopy{
-    position: absolute;
+#container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+        "logopy menu menu menu imagepy"
+        "titulo titulo titulo titulo titulo"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "copyr copyr copyr copyr copyr";
+  }
+  
+.logopy { 
+    grid-area: logopy;
     width: 149px;
     height: 150px;
-    left: 71px;
-    top: 20px;
+    margin-left: 25px;
+    margin-top: 10px;
+    background-color: #9efd9e;
+
+}
+  
+.menu { 
+    grid-area: menu; 
+    background-color: #282828;
+
+}
+.imagepy {
+    grid-area: imagepy;
+    width: 125px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 80px;
+    background-color: #9efd9e;
+    transform: translate(-50%, -50%);
+    animation: latido 1.4s linear infinite;
+
+}
+.titulo {
+    grid-area: titulo;
+    width: 860px;
+    height: 86px;
+    margin-left: 300px;
+    margin-top: 75px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 48px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+  
+.logobandera {
+    grid-area: logobandera;
+    width: 800px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.prox{
+    width: 400px;
+    height: 84px;
+    margin-left: 425px;
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 220px;
+    font-size: 36px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+}
+.sig{
+    width: 100px;
+    height: 25px;
+    margin-left: 500px;
+    margin-top: 5px;
+    font-family: Lemon;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+}
+.faceicon{
+    width: 40px;
+    height: 40px;
+    margin-left: 460px;
+    margin-top: 10px;
+}
+.twicon{
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.facetext{
+    width: 85px;
+    height: 42px;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+}
+.twtext{
+    width: 85px;
+    height: 42px;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+}
+  
+.copyr {
+    grid-area: copyr;
+
+}
+.textcopyr{
+    width: 474px;
+    height: 29px;
+    margin-left: 500px;
+    margin-top: 200px;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
 }
 .sopa{
-    position: absolute;
     width: 154px;
     height: 32px;
     left: 305px;
@@ -38,10 +167,9 @@
     font-size: 16px;
     line-height: 32px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 }
 .pastel{
-    position: absolute;
     width: 138px;
     height: 32px;
     left: 538px;
@@ -53,10 +181,9 @@
     font-size: 16px;
     line-height: 32px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 }
 .chipa{
-    position: absolute;
     width: 169px;
     height: 32px;
     left: 748px;
@@ -67,11 +194,10 @@
     font-size: 16px;
     line-height: 32px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 }
 
 .contacto{
-    position: absolute;
     width: 87px;
     height: 32px;
     left: 1028px;
@@ -82,123 +208,28 @@
     font-size: 16px;
     line-height: 32px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 }
-.titulopy{
-  position: absolute;
-    width: 890px;
-    height: 63px;
-    left: 275px;
-    top: 189px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 63px;
+nav ul{
     text-align: center;
-    color: #000000;
+    margin-top: 100px;
 }
-.logobanderapy{
-    position: absolute;
-    width: 1013px;
-    height: 499px;
-    left: 220px;
-    top: 300px;
+nav ul li {
+    display: inline;
+    padding: 45px 45px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    
 }
-.prox{ 
-    position: absolute;
-    width: 765px;
-    height: 80px;
-    left: 344px;
-    top: 866px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 80px;
-    text-align: center;
-    color: #000000;
-}
-.sig{
-    position: absolute;
-    width: 467px;
-    height: 45px;
-    left: 495px;
-    top: 1020px;
-    font-family: Lemon;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 45px;
-    text-align: center;
-    color: #000000;
-}
-.faceicon{
-    position: absolute;
-    width: 88.98px;
-    height: 79px;
-    left: 552px;
-    top: 1162px;
-}
-.twicon{
-    position: absolute;
-    width: 92.39px;
-    height: 78px;
-    left: 535px;
-    top: 1084px;
-}
-.facetext{
-    position: absolute;
-    width: 240px;
-    height: 43px;
-    left: 647px;
-    top: 1184px;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    color: #000000;
-}
-.twtext{
-    position: absolute;
-    width: 275px;
-    height: 42px;
-    left: 631px;
-    top: 1101px;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    color: #000000;
-}
-.copy{
-    position: absolute;
-    width: 474px;
-    height: 29px;
-    left: 483px;
-    top: 1401px;
-    font-family: 'Istok Web';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 29px;
-    text-align: center;
-    color: #000000;
-}
+
 .carta__ingredientes{
-    position: absolute;
     width: 698px;
-    height: 401px;
-    left: 670px;
-    top: 306px;
+    height: 500px;
+    margin-left: 670px;
+    margin-top: 5px;
     background: #D9D9D9;
 }
 .carta__video{
-    position: absolute;
     width: 1297px;
     height: 500px;
     left: 71px;
@@ -206,14 +237,12 @@
     background: #D9D9D9;
 }
 .imgcomida{
-    position: absolute;
     width: 555px;
     height: 401px;
     left: 71px;
     top: 306px;
 }
 .ingre{ 
-    position: absolute;
     width: 310px;
     height: 80px;
     left: 193px;
@@ -227,7 +256,6 @@
     color: #000000;
 }
 .lista{
-    position: absolute;
     width: 500px;
     height: 256px;
     left: 65px;
@@ -240,11 +268,10 @@
     color: #000000;
 }
 .videotext{
-    position: absolute;
     width: 650px;
     height: 96px;
-    left: 325px;
-    top: 20px;
+    margin-left: 325px;
+    margin-top: 20px;
     font-family: fantasy;
     font-style: normal;
     font-weight: 380;
@@ -254,28 +281,24 @@
     color: #000000;
 }
 .carta__vervideo{
-    position: absolute;
     width: 900px;
     height: 450px;
-    left: 375px;
-    top: 142px;
+    margin-left: 350px;
+    margin-top: 40px;
 }
 .carta__masa{
-    position: absolute;
     width: 280px;
     height: 300px;
     left: 0px;
     top: 64px;
 }
 .carta__relleno{
-    position: absolute;
     width: 280px;
     height: 300px;
     right: 0px;
     top: 64px;
 }
 .masa{
-    position: absolute;
     width: 123px;
     height: 32px;
     left: 100px;
@@ -288,7 +311,6 @@
     color: #000000;
 }
 .relleno{
-    position: absolute;
     width: 123px;
     height: 32px;
     right: 86px;
@@ -301,7 +323,7 @@
     color: #000000;
 }
 .lista__pastel{
-    position: absolute;
+
     width: 280px;
     height: 286px;
     left: 0px;
@@ -313,8 +335,9 @@
     line-height: 32px;
     color: #000000;
 }
+
 .carta__contacto{
-    position: absolute;
+
     width: 1300px;
     height: 900px;
     left: 70px;
@@ -322,11 +345,10 @@
     background: #D9D9D9;
 }
 .contactotext{
-    position: absolute;
     width: 800px;
     height: 185px;
-    left: 270px;
-    top: 30px;
+    margin-left: 250px;
+    margin-top: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     font-weight: 380;
@@ -336,19 +358,17 @@
     color: #000000;
 }
 .carta__contacto--datos{
-    position: absolute;
     width: 1000px;
     height: 600px;
-    left: 170px;
-    top: 250px;
+    margin-left: 150px;
+    margin-top: 10px;
     background: #000000;
 }
 .nombre{
-    position: absolute;
     width: 155px;
     height: 32px;
-    left: 165px;
-    top: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
     font-family: 'Lekton';
     font-style: normal;
     font-weight: 400;
@@ -358,19 +378,17 @@
     color: #FFFFFF;
 }
 .nombrerta{
-    position: absolute;
     width: 275px;
     height: 40px;
-    left: 100px;
-    top: 80px;
+    margin-left: 30px;
+    margin-top: 20px;
 background: #D9D9D9;
 }
 .apellido{
-    position: absolute;
     width: 155px;
     height: 32px;
-    right: 165px;
-    top: 40px;
+    margin-left: 500px;
+    margin-top: 10px;
     font-family: 'Lekton';
     font-style: normal;
     font-weight: 400;
@@ -380,19 +398,17 @@ background: #D9D9D9;
     color: #FFFFFF;
 }
 .apellidorta{
-    position: absolute;
     width: 275px;
     height: 40px;
-    right: 100px;
-    top: 80px;
+    margin-left: 20px;
+    margin-top: 5px;
     background: #D9D9D9;
 }
 .celular{
-    position: absolute;
     width: 155px;
     height: 32px;
-    left: 165px;
-    top: 160px;
+    margin-left: 40px;
+    margin-top: 20px;
     font-family: 'Lekton';
     font-style: normal;
     font-weight: 400;
@@ -402,19 +418,17 @@ background: #D9D9D9;
     color: #FFFFFF;
 }
 .celularrta{
-    position: absolute;
     width: 275px;
     height: 40px;
-    left: 100px;
-    top: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
     background: #D9D9D9;
 }
 .mail{
-    position: absolute;
     width: 155px;
     height: 32px;
-    right: 165px;
-    top: 160px;
+    margin-left: 500px;
+    margin-top: 10px;
     font-family: 'Lekton';
     font-style: normal;
     font-weight: 400;
@@ -424,19 +438,17 @@ background: #D9D9D9;
     color: #FFFFFF;
 }
 .mailrta{
-    position: absolute;
     width: 275px;
     height: 40px;
-    right: 100px;
-    top: 200px;
+    margin-left: 20px;
+    margin-top: 5px;
     background: #D9D9D9;
 }
 .consulta{
-    position: absolute;
     width: 155px;
     height: 32px;
-    left: 415px;
-    top: 275px;
+    margin-left: 50px;
+    margin-top: 15px;
     font-family: 'Lekton';
     font-style: normal;
     font-weight: 400;
@@ -446,29 +458,40 @@ background: #D9D9D9;
     color: #FFFFFF;
 }
 .consultarta{
-position: absolute;
-width: 630px;
-height: 170px;
-left: 195px;
-top: 350px;
-text-align: left;
-background: #D9D9D9;
+    width: 630px;
+    height: 170px;
+    margin-left: 20px;
+    margin-top: 15px;
+    text-align: left;
+    background: #D9D9D9;
 }
 .limpiar{
-position: absolute;
-width: 90px;
-height: 30px;
-left: 300px;
-top: 545px;
-background: #DD647A;
-}
-.enviar{
-    position: absolute;
     width: 90px;
     height: 30px;
-    left: 600px;
-    top: 545px;
+    margin-left: 350px;
+    margin-top: 100px;
+    background: #DD647A;
+}
+.enviar{
+    width: 90px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 100px;
     background: #64dd7f
+}
+.sobre__move {
+    width: 0;
+    height: 0;
+    border-top: 50px solid #eee;
+    border-right: 120px solid #ddd;
+    border-bottom: 50px solid #ccc;
+    border-left: 120px solid #ddd;
+    margin: auto;
+    margin-top: 2%;
+}
+.sobre__move:hover {
+    animation: agitar 1s;
+    animation-iteration-count: infinite;
 }
 @keyframes latido {
     0%{
@@ -485,5 +508,74 @@ background: #DD647A;
     }
     100%{
         transform: translate(-50%, -50%)  scale(1);
+    }
+}
+@keyframes agitar {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-color: black;
+    }
+    #container {
+        grid-template-areas: 
+        "logopy menu menu menu imagepy"
+        "titulo titulo titulo titulo titulo"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "copyr copyr copyr copyr copyr";
+        grid-template-rows: 70px auto 3fr 70px;
+        grid-template-columns: repeat(2, 3fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}
+
+@media (min-width: 1600px) {
+    #container {
+        grid-template-areas: 
+        "logopy menu menu menu imagepy"
+        "titulo titulo titulo titulo titulo"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "copyr copyr copyr copyr copyr";
+        grid-template-rows: 70px auto 3fr 70px;
+        grid-template-columns: repeat(2, 3fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
     }
 }
