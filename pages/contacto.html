@@ -16,14 +16,16 @@
         </div>
         <nav class="menu">
             <ul>
-                <li class="sopa"><a href="../pages/sopa.html">Sopa Paraguaya</a></li>
-                <li class="pastel"><a href="../pages/pastel.html">Pastel Mandio</a></li>
-                <li class="chipa"><a href="../pages/chipa.html">Chipa Tradicional</a></li>
-                <li class="contacto"><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/sopa.html">Sopa Paraguaya</a></li>
+                <li><a href="../pages/pastel.html">Pastel Mandio</a></li>
+                <li><a href="../pages/chipa.html">Chipa Tradicional</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="imagepy">
-            <img src="../images/paraguay.png" alt="paraguay" class="imagepy">
+        <div class="imagedad">
+            <div class="imagepy">
+                <img src="../images/paraguay.png" alt="paraguay" class="imagepy">
+            </div>
         </div>
         <header class="titulo">
             <h1>CONTACTANOS!</h1>
@@ -34,43 +36,55 @@
                 <h2 class="contactotext">Por favor, completa los datos del siguiente fomulario junto a la consulta y/o duda que tengas y te la estaremos respondiendo a la brevedad!</h2>
                 <div class="carta__contacto--datos">
                     <form action="">
-                        <label for="Nombre" class="nombre">Nombre</label>
-                        <input type="text" name="Nombre" class="nombrerta">
-                        <br>
-                        <label for="Apellido" class="apellido">Apellido</label>
-                        <input type="text" name="Apellido" class="apellidorta">
-                        <br>
-                        <label for="Numero" class="celular">Celular</label>
-                        <input type="Numero" name="Numero" class="celularrta">
-                        <br>
-                        <label for="Email" class="mail">Mail</label>
-                        <input type="mail" name="Email" class="mailrta">
-                        <br>
-                        <label for="Consulta" class="consulta">Consulta</label>
-                        <input type="text" name="Consulta" class="consultarta">
-                        <br>
-                        <input type="reset" value="Limpiar" class="limpiar">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Enviar
-                        </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">CONFIRMACION</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Esta por generar una nueva consulta. ¿Desea enviarlo?
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-primary">Continuar</button>
+                        <div class="nomape">
+                            <div class="nombredad">
+                                <label for="Nombre" class="nombre">Nombre</label>
+                                <input type="text" name="Nombre" class="nombrerta">
+                            </div>
+                            <div class="apellidodad">
+                                <label for="Apellido" class="apellido">Apellido</label>
+                                <input type="text" name="Apellido" class="apellidorta">
+                            </div>
+                        </div>
+                        <div class="numail">
+                            <div class="numerodad">
+                                <label for="Numero" class="celular">Celular</label>
+                                <input type="Numero" name="Numero" class="celularrta">
+                            </div>
+                            <div class="maildad">
+                                <label for="Email" class="mail">Mail</label>
+                                <input type="mail" name="Email" class="mailrta">
+                            </div>
+                        </div>
+                        <div class="consultadad">
+                            <label for="Consulta" class="consulta">Consulta</label>
+                            <input type="text" name="Consulta" class="consultarta">
+                        </div>
+                        <div class="botones">
+                            <input type="reset" value="Limpiar" class="limpiar">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Enviar
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLabel">CONFIRMACION</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Esta por generar una nueva consulta. ¿Desea enviarlo?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="button" class="btn btn-primary">Continuar</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </form>
                 </div>
             </div>
